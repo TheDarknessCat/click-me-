@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="card text-center container" style="width: 18rem;">
+        <a href="https://www.youtube.com/channel/UChON7Xt7Hkz86ltQ7vvgvOA?view_as=subscriber" >
+      <img src="wallpaper.jpg" class="card-img-top" alt="...">
+      </a>
+        <div class="card-body">
+          <h5 id="please" class="card-title">Please Wait</h5>
+          <h5 id="counting">10</h5>
+          
+        </div>
+        
+        <div class="card-body"style="" id="buttoneff">
+          
+        </div>
+        <a href="https://www.youtube.com/channel/UChON7Xt7Hkz86ltQ7vvgvOA?view_as=subscriber" >
+          <img src="wallpaper.jpg" class="card-img-top" alt="...">
+          </a>
+    </div>
+</body>
+<script>
+  var counter =10;
+  setInterval(function(){
+    counter--;
+    if (counter>=0){
+      document.getElementById("counting").innerHTML = counter;
+    };
+    if (counter==0){
+      document.getElementById("please").innerHTML ="";
+      document.getElementById("buttoneff").innerHTML ="<a href='https://www.youtube.com/channel/UChON7Xt7Hkz86ltQ7vvgvOA?view_as=subscriber' class='card-link'  ><button type='button' class='btn btn-success'>Ready</button></a>";
+    }
+
+
+  },1000)
+</script>
+</html>
