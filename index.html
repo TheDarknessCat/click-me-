@@ -1,25 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> 
-<head>
+<style>
+.cnt1{
+width: 720px;
+margin: auto;
+position: relative;
+text-align: center;
+margin-top: 5px;
+margin-bottom: 5px;
+
+}
+.cnt2{
+  width: 720px;
+  position: absolute;
+  margin: auto;
+  text-anchor: middle;
+  width:  720px;
+}
+.imgsiz{
+  width: 520px;
+  position: relative;
+  margin-left: 100px;
+  margin-right: 100px;
+
+}
+.imgsiz2{
+  width: 220px;
+  height: 100px;
+}
+</style>
+    <head>
     <title></title>
 </head>
 <body>
-    <div class=" container-md " >
-        <a href="https://www.youtube.com/channel/UChON7Xt7Hkz86ltQ7vvgvOA?view_as=subscriber" >
-      <img src="wallpaper.jpg" class="card-img-top container" style="width: 50rem;">
+    <div class=" cnt2" >
+        <a href="#" >
+      <img src="Asset 1ads ph no.jpg" class=" imgsiz" >
       </a>
-        <div class="card-body mx-auto"  style="width: 720px;">
+      <div class=" cnt1" >
+        <div class=" "  >
           <h5 id="please" class="card-title">Please Wait</h5>
           <h5 id="counting">10</h5>
           
         </div>
         
-        <div class="card-body"style="" id="buttoneff">
+        <div class=""style="" id="buttoneff">
+          </div>
           
         </div>
-        <a href="https://www.youtube.com/channel/UChON7Xt7Hkz86ltQ7vvgvOA?view_as=subscriber" >
-          <img src="wallpaper.jpg" class="card-img-top container" style="width: 50rem;">
+        <a href="#" >
+          <img src="Asset 1ads ph no.jpg" class=" imgsiz" >
           </a>
     </div>
 </body>
@@ -32,6 +63,7 @@
     };
     if (counter==0){
       document.getElementById("please").innerHTML ="";
+      document.getElementById("counting").innerHTML =" <img src='click.png' class='imgsiz2'>";      
       document.getElementById("buttoneff").innerHTML ="<a href='https://www.mediafire.com/file/xd8epoi5k63l4v7/%255BSoulreaperzone.com%255D_Nrto_Shppdn_-_481_HD_HS.mkv/file' class='card-link'  ><button type='button' class='btn btn-success'>Dowmload Link</button></a>";
     }
 
