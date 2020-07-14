@@ -8,8 +8,6 @@ height: 20%;
 margin: auto;
 position: relative;
 text-align: center;
-margin-top: 2%;
-margin-bottom: 2%;
 
 }
 .cnt2{
@@ -28,9 +26,27 @@ margin-bottom: 2%;
 
 }
 .imgsiz2{
-  width: 220px;
-  height: 100px;
+  width: 20%;
+  height:5%;
 }
+.please{
+  width:100% ;
+  height:15% ;
+  font-family: Arial,black ,bold;
+  font-size: 100%;
+}
+#counting{
+  width:100% ;
+  height:15% ;
+  font-family: Arial,black ,bold;
+  font-size: 100%;
+}
+/* .buttoneff{
+  width: 20%;
+  height: 5%;
+} */
+
+
 </style>
     <head>
     <title>Download Link</title>
@@ -41,13 +57,13 @@ margin-bottom: 2%;
       <img src="Asset 1ads ph no.jpg" class=" imgsiz" >
       </a>
       <div class=" cnt1" >
-        <div class=" "  >
-          <h5 id="please" class="card-title">Please Wait</h5>
-          <h5 id="counting">10</h5>
+        <div class="please"  >
+          <div id="please" >Please Wait</div>
+          <div id="counting">10</div>
           
         </div>
         
-        <div class=""style="" id="buttoneff">
+        <div class="buttoneff"style="" id="buttoneff">
           </div>
           
         </div>
@@ -65,8 +81,8 @@ margin-bottom: 2%;
     };
     if (counter==0){
       document.getElementById("please").innerHTML ="";
-      document.getElementById("counting").innerHTML =" <img src='click.png' class='imgsiz2'>";      
-      document.getElementById("buttoneff").innerHTML ="<a href='https://www.mediafire.com/file/xd8epoi5k63l4v7/%255BSoulreaperzone.com%255D_Nrto_Shppdn_-_481_HD_HS.mkv/file' class='card-link'  ><button type='button' class='btn btn-success'>Dowmload Link</button></a>";
+      document.getElementById("counting").innerHTML ="";      
+      document.getElementById("buttoneff").innerHTML ="<a href='https://www.mediafire.com/file/xd8epoi5k63l4v7/%255BSoulreaperzone.com%255D_Nrto_Shppdn_-_481_HD_HS.mkv/file'  ><button type='button' class='btn btn-success'>Download Link</button></a>";
     }
 
 
